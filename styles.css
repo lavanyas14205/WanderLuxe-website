@@ -634,7 +634,7 @@ nav {
   margin-bottom: 1rem;
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--text-dark);
+  color: var(--black);
 }
 
 .footer__col a {
@@ -773,5 +773,29 @@ nav {
 
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+      font-size: 2rem; /* Smaller text on smaller screens */
+  }
+
+  p {
+      font-size: 1rem; /* Smaller paragraph size */
+  }
+
+  .container {
+      padding: 10px; /* Reduce padding on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+      font-size: 1.5rem; /* Further reduce text size for mobile */
+  }
+
+  p {
+      font-size: 0.9rem; /* Adjust paragraph size for mobile */
   }
 }
